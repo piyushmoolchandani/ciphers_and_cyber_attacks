@@ -2,11 +2,10 @@ from collections import Counter
 
 def additive_statistical(s):
     """
-    Input: ascii 97 to 122
     Output: ascii 97 to 122
     
     """
-    
+    s = s.lower()
     char_count = Counter(s).most_common(1)
 
     most_occuring_char_text = char_count[0][0]
